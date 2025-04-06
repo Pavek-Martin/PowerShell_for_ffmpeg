@@ -1,5 +1,5 @@
 @echo off
-REM sestriha sceny z filmu  King Skate pomoci "ffmpeg"
+REM sestriha sceny z filmu  King Skate 
 REM nektery zabery u kterejch je poznamka se nepovedly ( asi moc kratkej cas apod. asi bude existovat nejakej limit)
 REM toto je jeste jako dodatek k repozitari "mvp_2_dokument" kterej jenom prehraval pomoci mpv prehravace
 
@@ -47,7 +47,7 @@ REM taky nejaky kratsi
 
 ffmpeg -i "King Skate (2018).mp4" -ss 00:34:49.000 -t 00:00:18.300 -c copy 20.mp4
 
-ffmpeg -i "King Skate (2018).mp4" -ss 00:34:49.000 -t 00:03:14.800 -c copy 21.mp4
+ffmpeg -i "King Skate (2018).mp4" -ss 00:37:56.000 -t 00:00:07.800 -c copy 21.mp4
 
 ffmpeg -i "King Skate (2018).mp4" -ss 00:40:41.200 -t 00:00:01.900 -c copy 22.mp4
 
