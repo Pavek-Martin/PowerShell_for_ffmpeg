@@ -109,9 +109,13 @@ Write-Host -ForegroundColor cyan "rozdil casu je $rozdil_vterin_out vterin"
 
 #ffmpeg -i in.mp4 -ss 00:00:15.000 -t 00:02:55.000 -c copy out.mp4
 $out_cas = $hh + ":" + $mm + ":" + $ss
-$out = "ffmpeg -i in.mp4 -ss " + $cas_1 + " -t " + $out_cas + "." + $ms + " -c copy out.mp4"
-
-echo $out
+$out_1 = "ffmpeg -i in.mp4 -ss " + $cas_1 + " -t " + $out_cas + "." + $ms + " -c copy out.mp4"
+echo $out_1
+echo ""
+echo "kdyby audio/video vytvorene timto prikazem nejak zlobylo tak zkuste podobny parametru na konci"
+echo ""
+$out_2 = "ffmpeg -i in.mp3 -ss " + $cas_1 + " -t " + $out_cas + "." + $ms + " out.mp3"
+echo $out_2
 echo ""
 
 # pause

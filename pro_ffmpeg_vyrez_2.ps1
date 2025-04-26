@@ -69,10 +69,13 @@ if ( $ss.Length -eq 1 ){ $ss = "0" + $ss }
 
 #ffmpeg -i in.mp3 -ss 00:00:15 -t 00:02:55 -c copy
 $out_cas = $hh + ":" + $mm + ":" + $ss
-$out = "ffmpeg -i in.mp4 -ss " + $cas_1 + " -t " + $out_cas + " -c copy out.mp4"
-
-echo $out
-
+$out_1 = "ffmpeg -i in.mp4 -ss " + $cas_1 + " -t " + $out_cas + " -c copy out.mp4"
+echo $out_1
+echo ""
+echo "kdyby audio/video vytvorene timto prikazem nejak zlobylo tak zkuste podobny parametru na konci"
+echo ""
+$out_2 = "ffmpeg -i in.mp3 -ss " + $cas_1 + " -t " + $out_cas + " out.mp3"
+echo $out_2
 echo ""
 
 # pause
